@@ -7,12 +7,12 @@
   justify-content: center;
   border-bottom-left-radius: $size-pe-100;
   border-bottom-right-radius: $size-pe-100;
-  background: linear-gradient(0.25turn, #01cdcd, #0098c8);
+  background: linear-gradient(0.25turn, $color-yallo-1, $color-yallo-2);
 
   nav {
     button {
       padding: $size-px-10;
-      color: #99e1ea;
+      color: $color-yallo-3;
 
       &:hover {
         color: $color-white;
