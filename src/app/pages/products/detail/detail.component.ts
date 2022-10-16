@@ -5,7 +5,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { ProductInterface } from '../products.interface';
-import { ProductsService } from '../products.service';
 
 @Component({
   selector: 'app-detail',
@@ -18,12 +17,10 @@ export class DetailComponent implements OnInit {
 
   item: ProductInterface = { type: '', avatar: '', name: '', id: '' };
 
-  constructor(private route: ActivatedRoute, private productsService: ProductsService) { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.route.params.subscribe((params: any) => {
-      this.productsService.getProductById(params.id).subscribe((res: ProductInterface) => this.item = res);
-    });
+    this.item = this.route.snapshot.data['item'];
   }
 
 }

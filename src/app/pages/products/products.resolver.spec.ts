@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ProductsResolver } from './products.resolver';
+import { ListResolver } from './list/list.resolver';
 
-describe('ProductsResolver', () => {
-  let resolver: ProductsResolver;
+describe('ListResolver', () => {
+  let resolver: ListResolver;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    resolver = TestBed.inject(ProductsResolver);
+    resolver = TestBed.inject(ListResolver);
   });
 
   it('should be created', () => {
