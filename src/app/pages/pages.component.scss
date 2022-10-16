@@ -2,6 +2,8 @@
 
 header {
   width: $size-pe-100;
+  position: absolute;
+  z-index: $index-5;
 }
 
 main {
