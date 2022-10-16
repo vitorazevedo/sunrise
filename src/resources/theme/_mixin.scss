@@ -1,0 +1,25 @@
+@mixin heading($_weight, $_size, $_height, $_spacing, $_padding) {
+  font-weight: $_weight;
+  font-size: $_size;
+  line-height: $_height;
+  letter-spacing: $_spacing;
+  padding-top: $_padding;
+}
+
+@mixin input-alert($_color) {
+  stz-input {
+    label {
+      input {
+        border-bottom-color: $_color;
+      }
+    }
+
+    strong {
+      color: $_color;
+    }
+  }
+}
+
+@mixin input-legend($_color) {
+  color: $_color;
+}

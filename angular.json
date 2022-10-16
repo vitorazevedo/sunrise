@@ -17,6 +17,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/resources/scss",
+                "src/resources/theme"
+              ]
+            },
             "outputPath": "dist/sunrise",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -86,6 +92,12 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/resources/scss",
+                "src/resources/theme"
+              ]
+            },
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",

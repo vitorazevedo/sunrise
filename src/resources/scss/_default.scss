@@ -1,0 +1,37 @@
+@import "variables";
+
+html,
+body {
+  height: $size-pe-100;
+  min-height: $size-pe-100;
+  font: $font-regular $size-pe-100 $font-family-work-sans;
+  letter-spacing: 0;
+  background: $color-grey-6;
+}
+@media (max-width: $size-screen-md) {
+  html,
+  body {
+    font-size: $size-pe-95;
+  }
+}
+
+b,
+strong {
+  font-weight: $font-bold;
+}
+
+.box {
+  padding: $size-px-20;
+  margin: $size-px-20 0 $size-px-40 0;
+  border: $size-px-1 solid $color-grey-4;
+  box-shadow: $size-px-1 $size-px-1 $size-px-3 $color-grey-4;
+  background: $color-white;
+}
+
+a {
+  color: $color-primary;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
