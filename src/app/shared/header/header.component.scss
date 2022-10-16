@@ -1,3 +1,26 @@
+@import "variables";
+
 .app-header {
+  padding: $size-px-20 0 $size-px-40 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: $size-pe-100;
+  border-bottom-right-radius: $size-pe-100;
   background: linear-gradient(0.25turn, #01cdcd, #0098c8);
+
+  nav {
+    button {
+      padding: $size-px-10;
+      color: #99e1ea;
+
+      &:hover {
+        color: $color-white;
+      }
+
+      &[active="true"] {
+        color: $color-white;
+      }
+    }
+  }
 }

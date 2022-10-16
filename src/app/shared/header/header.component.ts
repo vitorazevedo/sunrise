@@ -9,4 +9,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  nav: string[] = ['Overview', 'Mobile', 'Internet', 'TV', 'Support'];
+  active: number = 0;
+
+  getActive(index: number) {
+    return this.active === index;
+  }
+
+  setActive(index: number) {
+    this.active = index;
+  }
+
 }
