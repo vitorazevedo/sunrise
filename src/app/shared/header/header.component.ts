@@ -12,7 +12,7 @@ export class HeaderComponent {
   nav: string[] = ['Overview', 'Mobile', 'Internet', 'TV', 'Support'];
   active: number = 0;
 
-  getActive(index: number) {
+  isActive(index: number) {
     return this.active === index;
   }
 

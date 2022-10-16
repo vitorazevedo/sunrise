@@ -1,6 +1,6 @@
 <section class="app-header">
   <nav>
-    <button (click)="setActive(i)" *ngFor="let item of nav; let i = index;" [attr.active]="getActive(i)">
+    <button (click)="setActive(index)" *ngFor="let item of nav; let index = index;" [attr.active]="isActive(index)">
       <span>{{ item }}</span>
     </button>
   </nav>
