@@ -10,6 +10,10 @@ export const PagesRoutes: Routes = [
       {
         path: 'products',
         loadChildren: () => import('./products/products.routes').then(r => r.ProductsRoutes)
+      },
+      {
+        path: '**',
+        redirectTo: 'products/list'
       }
     ]
   }
