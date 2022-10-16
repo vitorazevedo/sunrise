@@ -1,3 +1,32 @@
+@import "variables";
+
 .app-footer {
-  background-color: aquamarine;
+  padding: $size-px-40;
+  display: flex;
+  justify-content: space-evenly;
+
+  background-color: #27303e;
+
+  nav {
+    padding: 0 $size-px-10 0 $size-px-10;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+      padding-bottom: $size-px-10;
+      font-weight: $font-medium;
+      color: $color-white;
+    }
+
+    button {
+      padding: $size-px-4;
+      font-size: $font-size-13;
+      color: $color-grey-3;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
 }

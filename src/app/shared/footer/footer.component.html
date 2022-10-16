@@ -1,3 +1,6 @@
 <section class="app-footer">
-  <p>footer works!</p>
+  <nav *ngFor="let nav of navs;">
+    <p>{{nav.title}}</p>
+    <button *ngFor="let button of nav.buttons;"><span>{{ button }}</span></button>
+  </nav>
 </section>
