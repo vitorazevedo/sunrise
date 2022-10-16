@@ -1,1 +1,8 @@
-<p>list works!</p>
+<section class="app-list">
+  <div>
+    <button [routerLink]="['/products/detail/', card.id]" *ngFor="let card of items">
+      <app-card [data]="card"></app-card>
+    </button>
+  </div>
+  <button (click)="getUpdatedData()">Update</button>
+</section>

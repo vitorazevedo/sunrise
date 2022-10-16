@@ -1,0 +1,70 @@
+@import "variables";
+
+.app-card {
+  padding: $size-px-10;
+
+  & > div {
+    width: $size-pe-100;
+    display: block;
+    text-align: left;
+    border-radius: $size-px-10;
+    box-shadow: 0 $size-px-2 $size-px-4 $color-grey-4;
+    background-color: $color-white;
+    overflow: hidden;
+
+    figure {
+      & > div {
+        width: $size-pe-100;
+        height: $size-px-120;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        img {
+          width: $size-pe-100;
+        }
+      }
+
+      figcaption {
+        padding: $size-px-15 $size-px-20 $size-px-30 $size-px-20;
+
+        p {
+          padding-bottom: $size-px-10;
+          color: $color-grey-1;
+        }
+
+        span {
+          font-size: $font-size-13;
+          color: $color-grey-3;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  &[type="large"] {
+    & > div {
+      figure {
+        & > div {
+          height: $size-px-220;
+        }
+
+        figcaption {
+          p {
+            font-size: $font-size-32;
+          }
+
+          span {
+            font-size: $font-size-21;
+          }
+        }
+      }
+    }
+  }
+}
+
+:host {
+  width: $size-px-220;
+  display: block;
+}

@@ -1,0 +1,27 @@
+@import "variables";
+
+.app-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > div {
+    width: $size-pe-100;
+    margin-bottom: $size-px-40;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+
+  & > button {
+    width: $size-px-220;
+    padding: $size-px-10;
+    color: #dff9f9;
+    border-radius: $size-px-20;
+    background-color: #00cccc;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
