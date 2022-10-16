@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
 
 import { ListResolver } from './list.resolver';
@@ -6,7 +7,9 @@ describe('ListResolver', () => {
   let resolver: ListResolver;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      imports: [HttpClientModule]
+    });
     resolver = TestBed.inject(ListResolver);
   });
 

@@ -1,6 +1,9 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { DetailComponent } from './detail.component';
+import { DetailResolver } from './detail.resolver';
 
 describe('DetailComponent', () => {
   let component: DetailComponent;
@@ -8,7 +11,8 @@ describe('DetailComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DetailComponent]
+      imports: [DetailComponent, RouterTestingModule, HttpClientModule],
+      providers: [DetailResolver]
     }).compileComponents();
 
     fixture = TestBed.createComponent(DetailComponent);
