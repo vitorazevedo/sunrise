@@ -2,19 +2,16 @@
 
 header {
   width: $size-pe-100;
-  background-color: aqua;
 }
 
 main {
   width: $size-pe-100;
   height: $size-pe-100;
   overflow-y: auto;
-  background-color: beige;
 }
 
 footer {
   width: $size-pe-100;
-  background-color: aquamarine;
 }
 
 :host {
