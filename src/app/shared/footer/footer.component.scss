@@ -31,9 +31,13 @@
 
   @media (max-width: 660px) {
     padding: $size-px-20;
-    flex-direction: column;
+    flex-wrap: wrap;
 
     nav {
+      p {
+        padding: $size-px-5;
+      }
+
       button {
         display: none;
       }
