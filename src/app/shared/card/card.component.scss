@@ -67,4 +67,8 @@
 :host {
   width: $size-px-220;
   display: block;
+
+  @media (max-width: 519px) {
+    width: $size-pe-100;
+  }
 }

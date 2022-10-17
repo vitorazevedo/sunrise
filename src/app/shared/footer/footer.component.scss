@@ -4,7 +4,6 @@
   padding: $size-px-40;
   display: flex;
   justify-content: space-evenly;
-
   background-color: $color-yallo-4;
 
   nav {
@@ -26,6 +25,17 @@
 
       &:hover {
         color: $color-white;
+      }
+    }
+  }
+
+  @media (max-width: 660px) {
+    padding: $size-px-20;
+    flex-direction: column;
+
+    nav {
+      button {
+        display: none;
       }
     }
   }
